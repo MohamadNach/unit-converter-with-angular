@@ -1,0 +1,19 @@
+
+/* Fill-remaining-spacer is not used */
+.fill-remaining-spacee{
+  /*
+  This fills the remaining space, by using flexbox.
+  Every toolbar row uses a flexbox row layout.
+  */
+  flex: 1 1 auto;
+
+}
+#toolbar-title{
+  margin:auto;
+
+}
+
+.material-icons{
+  color: white;
+}
+

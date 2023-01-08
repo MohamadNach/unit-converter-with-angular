@@ -1,0 +1,8 @@
+<mat-form-field [formGroup]="parentForm" appearance="fill">
+  <mat-label for="categoryValue">Select category</mat-label>
+  <mat-select formControlName="categoryValue" name="categoryValue" id="categoryValue">
+    <mat-option *ngFor="let item of converterCategoriesDefs" value="{{item.name}}">{{item.name}}</mat-option>
+    <!-- <mat-option value="Temperature">Temperature</mat-option>
+    <mat-option value="Distance">Distance</mat-option> -->
+  </mat-select>
+</mat-form-field>

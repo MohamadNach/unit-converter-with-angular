@@ -1,0 +1,8 @@
+<mat-form-field [formGroup]="parentForm" appearance="fill">
+  <mat-label for="converterValue">Select converter</mat-label>
+  <mat-select formControlName="converterValue" name="converterValue" id="converterValue">
+    <mat-option *ngFor="let item of conversionDefs" value="{{item.name}}">{{item.name}}</mat-option>
+    <!-- <mat-option value="Kms2Miles">Kilometers to miles</mat-option>
+    <mat-option value="Miles2Kms">miles to kilometers</mat-option> -->
+  </mat-select>
+</mat-form-field>
